@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ViCDaCy Farm - Cattle for Africa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Styles -->
+    <style>
+      /* Global Styles */
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: bisque);
+        color: #333;
+      }
+      /* Header Styles */
+      header {
+        background-image: url("/potato-plantations-grow-field-vegetable-260nw-1357119974.png"); /* Replace with your header image */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+        color: white;
+        text-align: center;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      header h1 {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      /* Navigation Styles */
+      nav {
+        position: sticky;
+        top: 0;
+        background-color: #4caf50;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        z-index: 1000;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #ffeb3b;
+      }
+      /* Section Styles */
+      section {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      section:nth-child(even) {
+        background-color: #f0f0f0;
+      }
+      section h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #2e7d32;
+      }
+      .content {
+        max-width: 1200px;
+        margin: auto;
+      }
+      /* Columns Styles */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        justify-content: center;
+      }
+      .column {
+        flex: 1 1 300px;
+        max-width: 30%;
+        margin: 15px;
+        box-sizing: border-box;
+      }
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .card img,
+      .card video {
+        width: 100%;
+        height: auto;
+      }
+      .card-content {
+        padding: 20px;
+      }
+      .card-content h3 {
+        margin-top: 0;
+        color: #2e7d32;
+      }
+      .card-content p {
+        text-align: left;
+        line-height: 1.6;
+      }
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+      footer p {
+        margin: 0;
+      }
+      /* Animation Styles */
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+      }
+      .slide-up {
+        transform: translateY(50px);
+        opacity: 0;
+        animation: slideUp 1s forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideUp {
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        nav a {
+          margin: 0 10px;
+          font-size: 1em;
+        }
+        header h1 {
+          font-size: 2.5em;
+        }
+        .column {
+          max-width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1 class="fade-in">ViCDaCy FARMS</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#our-farm">Our Farm</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <div class="content">
+        <h2 class="slide-up">About ViCDaCy Farm</h2>
+        <p class="slide-up">
+          ViCDaCy Farm is a leading agricultural enterprise in Ghana,
+          specializing in sustainable cattle farming. Our mission is to nourish
+          Africa with quality livestock and to promote eco-friendly farming
+          practices that benefit both the community and the environment.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Farm Section -->
+    <section id="our-farm">
+      <div class="content">
+        <h2 class="slide-up">Explore Our Farm</h2>
+        <div class="row">
+          <!-- Animal Farming Card -->
+          <div class="column">
+            <div class="card slide-up">
+              <img
+                src="/Cattle-farmers-worry-over-dysfunctional-livestock-policy.jpg"
+                alt="Cattle Farm"
+              />
+              <div class="card-content">
+                <h3>Cattle Farming</h3>
+                <p>
+                  Our cattle are raised in open pastures, ensuring they lead
+                  healthy and stress-free lives. We prioritize organic feeding
+                  practices to produce the finest quality beef.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Crop Farming Card -->
+          <div class="column">
+            <div class="card slide-up">
+              <img src="/crops.jpg" alt="Crop Field" />
+              <div class="card-content">
+                <h3>Crop Cultivation</h3>
+                <p>
+                  We cultivate a variety of crops, including maize and soybeans,
+                  using sustainable methods that enrich the soil and preserve
+                  natural resources.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Farm Video Card -->
+          <div class="column">
+            <div class="card slide-up">
+              <video controls>
+                <source
+                  src="/Ewura Abena - It Is Finished (Performance Video) (1080p).mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <div class="card-content">
+                <h3>Farm Tour</h3>
+                <p>
+                  Take a virtual tour of ViCDaCy Farm and experience the beauty
+                  and harmony of our agricultural practices firsthand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="content">
+        <h2 class="slide-up">Our Products</h2>
+        <div class="row">
+          <!-- Beef Products Card -->
+          <div class="column">
+            <div class="card slide-up">
+              <img src="/beef.jpg" alt="Beef Products" />
+              <div class="card-content">
+                <h3>Premium Beef</h3>
+                <p>
+                  Our beef products are renowned for their tenderness and
+                  flavor, a result of our commitment to quality and animal
+                  welfare.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Dairy Products Card -->
+          <div class="column">
+            <div class="card slide-up">
+              <img src="/care-livestock.jpg" alt="Dairy Products" />
+              <div class="card-content">
+                <h3>Fresh Dairy</h3>
+                <p>
+                  We offer a range of dairy products, including milk and cheese,
+                  produced from cows that are pasture-raised and free of
+                  synthetic hormones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Agricultural Consultancy Card -->
+          <div class="column">
+            <div class="card slide-up">
+              <img src="/af-1.jpg" alt="Consultancy Services" />
+              <div class="card-content">
+                <h3>Consultancy Services</h3>
+                <p>
+                  Our experts provide consultancy services to help other farmers
+                  adopt sustainable practices and improve their yield.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="content">
+        <h2 class="slide-up">Get in Touch</h2>
+        <p class="slide-up">
+          We'd love to hear from you! Whether you're interested in our products
+          or want to learn more about our farming methods, feel free to reach
+          out.
+        </p>
+        <form class="slide-up">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            style="padding: 10px; margin: 10px; width: 80%; max-width: 400px"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            style="padding: 10px; margin: 10px; width: 80%; max-width: 400px"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+            style="padding: 10px; margin: 10px; width: 80%; max-width: 400px"
+          ></textarea>
+          <br />
+          <button
+            type="submit"
+            style="
+              padding: 15px 30px;
+              background-color: #4caf50;
+              color: white;
+              border: none;
+              font-size: 1em;
+              cursor: pointer;
+              border-radius: 5px;
+            "
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 ViCDaCy Farm. All Rights Reserved.</p>
+      <p>Follow us on:</p>
+      <!-- Social Media Links (replace # with actual links) -->
+      <a href="#" style="color: white; margin: 0 10px">Facebook</a> |
+      <a href="#" style="color: white; margin: 0 10px">Twitter</a> |
+      <a href="#" style="color: white; margin: 0 10px">Instagram</a>
+    </footer>
+
+    <!-- JavaScript for Animations -->
+    <script>
+      // Function to add 'slide-up' class to elements when they enter the viewport
+      const slideUpElements = document.querySelectorAll(".slide-up");
+      const observerOptions = {
+        threshold: 0.1,
+      };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      }, observerOptions);
+      slideUpElements.forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
